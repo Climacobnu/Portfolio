@@ -1,262 +1,224 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Portfolio website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Leandro Climaco">
+    <meta name="description" content="Portfólio do desenvolvedor full-stack Leandro Climaco">
+    <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
+    <title>Leandro Climaco</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 
-	 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+    <nav data-menu="suave">
+       <p><a href="#home">&lsaquo;LC/&rsaquo;</a></p>
+       <button data-menu="button" aria-controls="menu"></button>
+      <ul data-menu="list" id="menu">
+        <a href="#home">
+        <li>Home</li>
+      </a>
+        <a href="#sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="#experiencia">
+        <li>Experiência</li>
+      </a>
+      <a href="#projetos">
+        <li>Projetos</li>
+      </a>
+      </ul>
+    </nav>
+  </header>
 
-</head>
-<body>
+    <main>
+      <section class="principal" id="home" >
+        <div class="principal__left">
+          <h1>Olá, eu sou</h1>
+            <span class="principal__sentence"></span>
+            <span class="principal__input-cursor"></span>
+          <h1>Desenvolvedor Full Stack</h1>
+          <div class="principal__botao">
+            <a href="https://www.linkedin.com/in/climacobnu-/" target="_blank">
+              <div class="principal__botao-linkedin">
+                <img src="./assets/linkedin.png" alt="" />
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <a href="https://github.com/climacobnu" target="_blank">
+              <div class="principal__botao-github">
+                <img src="./assets/github.png" alt="" />
+                <p>Github</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="principal__right">
+          <img src="./assets/code.svg" alt="Ilustração representando uma desenvolvedora sentada na cadeira mexendo no notebook com ambiente em volta." data-tilt>
+        </div>
+        
+        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo"></a></div>
+      </section>
+      <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+        <div class="sobre-mim__foto">
+          <img src="./assets/eu.png" alt="Uma selfie da Leandro Climaco" />
+        </div>
+        <div class="sobre-mim__descricao" >
+          <h1>Sobre mim</h1>
+          <h2>São José, Santa Catarina</h2>
+          <p>
+            Olá! Sou Desenvolvedor full stack.
+            Minha missão é prover soluções inovadoras, com eficiência e eficácia, a fim de impactara o mercador de tecnologia. Atuando de forma integrada e comprometida.
+          </p>
+          <div class="sobre-mim__descricao-buttons">
+            <a href="./assets/leandroclimaco.pdf" download="">
+              <div class="sobre-mim__descricao-buttons-curriculo">
+                <img src="./assets/download-da-nuvem.png" alt="" />
+                <p>Currículo</p>
+              </div>
+            </a>
+            <a
+              href="mailto: climacobnu@gmail.com?subject=climaco, vim pelo seu portfólio! :)"
+              target="_blank"
+            >
+              <div class="sobre-mim__descricao-buttons-email">
+                <img src="./assets/email.png" alt="" />
+                <p>E-mail</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </section>
+      <section class="experiencia" id="experiencia" data-anime="js-scroll">
+        <h1>Experiência</h1>
+        <div class="experiencia__wrapper">
+          <section class="experiencia__lugares">
+            <ul data-tab="menu">
+              <li>&#128064&#128064</li>
+              <li>My Epic Trip</li>
+              <li>HCFM-USP</li>
+            </ul>
+          </section>
+          <div class="experiencia__descricao" data-tab="content">
+            <section data-anime="show-right">
+              <h2>Em busca da minha primeira experiência "oficial" :)</h2>
+              <p class="experiencia__descricao-local">Quem sabe na sua empresa?</p>
+              <p>Estou disponível para bater um papo, você pode entrar em contato via e-mail climacobnu@gmail.com &#10024</p>
+            </section>
+            <section data-anime="show-right">
+            <h2>Desenvolvedor Full-Stack</h2>
+            <span>Out 2021 - Atual</span>
+            <p class="experiencia__descricao-local">-----</p>
+            <p>
+              -----
 
-	<!----hero Section start---->
+              -----
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Graduação / Estágio</h2>
+            <span>Jan 2013 - Ago 2017</span>
+            <p class="experiencia__descricao-local">Sistemas de Informação</p>
+            <p>
+              ----
+              ----
+            </p>
+          </section>
+        </div>
+        </section>
+        </div>
+      </section>
+      <section class="projetos" id="projetos" data-anime="js-scroll">
+        <h1>Projetos</h1>
+        <div class="projetos__wrapper">
+          <section class="projetos__card">
+            <a href="https://github.com/Climacobnu/CloneYoutube" target="_blank">
+            <img src="./assets/cloneYoutube.JPG" alt="" class="projeto-img"/>
+          </a>
+            <h2>Clone Youtube</h2>
+            <p>
+              Projeto desenvolvido a partir de curso de JavaScript.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML, CSS, JavaScript.</span>
+            <a href="https://github.com/Climacobnu/CloneYoutube" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png"" alt="Imagem de raposa representando meu projeto número 1">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="https://github.com/Climacobnu/CloneNetFlix" target="_blank">
+            <img src="./assets/CloneNetFlix.JPG" alt="Imagem do filme vingadores representando meu projeto número 2" class="projeto-img"/>
+            </a>
+            <h2>Clone Net Flix</h2>
+            <p>
+              Projeto desenvolvido a partir de curso de JavaScript.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://github.com/Climacobnu/CloneNetFlix" target="_blank"
+              >
+              <div class="projetos__card-button">
+              <img src="./assets/link.png" alt="">
+              Visualizar
+            </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="https://github.com/Climacobnu/app_cardapio" target="_blank">
+            <img src="./assets/AppCardapio.JPG" alt="" class="projeto-img"/>
+            </a>
+            <h2>App Cardapio</h2>
+            <p>
+              Projeto desenvolvido a partir de curso de JavaScript.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://github.com/Climacobnu/app_cardapio" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="Imagem logo do pokémon representando meu projeto número 3">
+                Visualizar
+              </div>
+            </a>
+          </section>
+          <section class="projetos__card">
+            <a href="https://github.com/Climacobnu/chatbot" target="_blank">
+            <img src="./assets/chatbot.JPG" alt="Imagem logo de folhas de uma planta representando meu projeto número 4" class="projeto-img"/>
+          </a>
+            <h2>Chat Bot</h2>
+            <p>
+              Projeto desenvolvido a partir de curso de JavaScript.
+            </p>
+            <span>Tecnologias usadas no projeto: HTML e CSS.</span>
+            <a href="https://github.com/Climacobnu/chatbot" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
+              </div>
+            </a>
 
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Portfo<span>lio</span></h2>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#service">Projetos</a></li>
-				<li><a href="#about">Sobre</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-			<a  href="https://github.com/Climacobnu" target="_blank" <i class="fab fa-github" style="font-size:24px;color:red"></i></a>
-			<a  href="https://www.linkedin.com/in/leandro-climaco-3b133566/" target="_blank" <i class="fab fa-linkedin-square" style="font-size:24px;color:red"></i></a>
-			<a  href="https://climacobnu.blogspot.com/" target="_blank" <i class='fab fa-blogger-b' style='font-size:24px;color:red'></i></a>
-		</nav>
+            
 
-		<div class="content">
-			<h4>Olá, meu nome é</h4>
-			<h1>Leandro <span>Climaco</span></h1>
-			<h3>Eu sou Desenvolvedor full stack.</h3>
-			<div class="newslatter">
-				<form>
-					<!-- <input type="email" name="email" id="mail" placeholder="Enter Your Email">
-					<input type="submit" name="submit" value="Lets Start"> -->
-
-					<a href="#service" class="btn">Projetos</a>
-				</form>
-			</div>
-		</div>
-	</div>
-
-
-
-	<!-----service section start----------->
-	<div class="service" id="service">
-		<div class="title">
-			<h2>Projetos</h2>
-		</div>
-
-		<div class="box">
-			<div class="card">
-				<img src="img/cloneYoutube.jpg" /><br> 
-				<h5>Clone Youtube</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-				
-
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/Climacobnu/CloneYoutube" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<img src="img/CloneNetFlix.jpg" /><br> 
-				<h5>Clone NetFlix</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/Climacobnu/CloneNetFlix" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<img src="img/chatbot.jpg" /><br> 
-				<h5>Chatbot</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/Climacobnu/chatbot" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-		<!-----service section start----------->
-		<div class="service" id="service">
-			<div class="title">
-				<h2>Projetos</h2>
-			</div>
-	
-			<div class="box">
-				<div class="card">
-					<img src="img/Cardapio.JPG" /><br> 
-					<h5>App Cardapio</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-						<p style="text-align: center;">
-							<a class="button" href="https://github.com/Climacobnu/app_cardapio" target="_blank">Read More</a>
-						</p>
-					</div>
-				</div>
-	
-				<div class="card">
-					<img src="img/geradorMegaSena.JPG" /><br> 
-					<h5>Gerador nº Mega-Sena</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-						<p style="text-align: center;">
-							<a class="button" href="https://github.com/Climacobnu/Mega-Sena" target="_blank">Read More</a>
-						</p>
-					</div>
-				</div>
-	
-				<div class="card">
-					<img src="img/main-img.png" /><br> 
-					<h5>-----</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-						<p style="text-align: center;">
-							<a class="button" href="#">Read More</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-			<!-----service section start----------->
-	<div class="service" id="service">
-		<div class="title">
-			<h2>Projetos</h2>
-		</div>
-
-		<div class="box">
-			<div class="card">
-				<img src="img/JogoDaVelha.jpg" /><br> 
-				<h5>Jogo da Velha</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/Climacobnu/tictactoe" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<img src="img/pedraPapelTesoura.JPG" /><br> 
-				<h5>Pedra Papel ou Tesoura</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/Climacobnu/rock-paper-scissors" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<img src="img/xadrez.jpg" /><br> 
-				<h5>Xadrez</h5>
-				<div class="pra">
-					<p>JavaScript<br>
-						Html<br>
-						Css</p>
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/Climacobnu/Xadrez" target="_blank">Read More</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+   
+          </section>
+        </div>
+      </section>
 
 
-	<!----About section start---->
-	<section class="about" id="about">
-		<div class="main">
-			<img src="img/main-img.png"> 
-			<div class="about-text">
-				<h2>Sobre</h2>
-				<h5>Desenvolvedor <span>full stack</span></h5>
-				<p>​
-					Minha missão é prover soluções inovadoras, com eficiência
-					e eficácia, a fim de impactara o mercador de tecnologia. Atuando de forma integrada e comprometida.</p>
-				<button type="button"></button>
-			</div>
-		</div>
-	</section>
+      
 
-	<!----About section start---->
+      <footer>
+        <p>Desenvolvido com muito <img src="./assets/heart.png" alt="Ícone de coração"> por</p><a href="https://www.linkedin.com/in/gabrielasouza-/" target="_blank"><span> Leandro Climaco</span></a>
+      </footer>
+    </main>
 
- 	<div class="skills">
-		<section class="skills" id="skills">
-		<section id="skills">
-		<progress value="80" max="100"></progress><span>JavaScript/jQuery</span>
-		<progress value="70" max="100"></progress><span>HTML5/CSS3</span>
-		<progress value="60" max="100"></progress><span>NodeJS</span>
-		<progress value="70" max="100"></progress><span>Java/PHP</span>
-		<progress value="60" max="100"></progress><span>MySQL</span>
-		<progress value="80" max="100"></progress><span>Photoshop</span>
-		</section>
-
-	</div>
-	</div>
-
-	<!------Contact Me------>
-	<div class="contact-me">
-		<!-- <p>Let Me Get You A Beautiful Website.</p>
-		<a class="button-two" href="#">Hire Me</a> -->
-	</div>
-
-	<!------footer start--------->
-	<footer>
-		<p>Leandro Climaco</p>
-		<p>Desenvolvimento em HTML, CSS e JavaScript</p>
-		<div class="social">
-
-			<a href="https://github.com/Climacobnu" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/leandro-climaco-3b133566/" target="_blank"><i class="fab fa-linkedin-square"></i></a>
-			<a href="https://climacobnu.blogspot.com/" target="_blank"><i class="fab fa-blogger-b"></i></a>
-		</div>
-		
-	</footer>
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"></script>
-	<script src="script.js"></script>
-	
-</body>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
+  </body>
 </html>
